@@ -1,3 +1,109 @@
-.subsection.header {
-  color: red;
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 100vh;
+    margin: auto;
 }
+
+.left {
+    font-weight: 600;
+}
+
+.guia {
+    font-size: 10px;
+    color: gray;
+}
+
+.info:has(input:focus),
+.direccion:has(input:focus),
+.correo:has(input:focus) {
+    background-color: lightyellow;
+}
+
+.info {
+    display: flex;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    padding: 20px;
+    gap: 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;    
+}
+
+input, select {
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    
+}
+
+input:hover,
+select:hover {
+    border-color: red;
+}
+
+.direccion {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 2px solid lightgray;
+}
+
+.titulo {
+    width: 50%;
+    margin: 0;
+    font-weight: 600;
+    text-align: end;
+}
+
+.contenedor-campos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fila {
+    display: flex;
+    gap: 30px;
+}
+
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.correo {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20%;
+    padding-bottom: 20px;
+    gap: 10px;
+    border-bottom: 2px solid lightgray;
+}
+
+.boton {
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+
+
+

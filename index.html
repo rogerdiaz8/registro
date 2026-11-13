@@ -1,13 +1,100 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <meta charset="utf-8">
-        <title>CSS</title>
-    </head>
-    <body>
-        <div>Style me via the external method!</div>
-        <p>I would like to be styled with the internal method, please.</p>
-        <button>Inline Method</button>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pruebas CSS</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Formulario de registro</h1>
+    <form class="container">
+      <div class="info">
+        <div class="left">
+          <label for="nombre">Nombre y Apellidos</label>
+        </div>
+
+        <div class="right">
+          <input type="text" name="nombre" id="nombre">
+          <small class="guia">Nombre</small>
+                    
+          <input type="text" name="apellido" id="primer">
+          <small class="guia">Primer apellido</small>
+
+          <input type="text" name="apellido" id="segundo">
+          <small class="guia">Segundo apellido</small>
+        </div>
+      </div>
+
+      <div class="direccion">
+          <label for="direccion" class="titulo" id="dir">Direccion</label>
+        
+        <div class="contenedor-campos">
+          <div class="fila">
+            <div class="campo">
+              <input type="text" name="calle" id="calle">
+              <small class="guia">calle,numero,piso</small>
+            </div>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <input type="text" name="postal" id="postal">
+              <small class="guia">Codigo postal</small>
+            </div>
+            <div class="campo">
+              <input type="text" name="municipio" id="mun">
+              <small class="guia">Municipio</small>
+            </div>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <select id="provincia">
+                <option value=""></option>
+                <option value="bqto">Barquisimeto</option>
+                <option value="cbd">Cabudare</option>
+              </select>
+              <small class="guia">Provincia</small>
+            </div>
+            <div class="campo">
+              <select id="pais">
+                <option value=""></option>
+                <option value="vzla">Venezuela</option>
+                <option value="col">Colombia</option>
+              </select>
+              <small class="guia">Pais</small>
+            </div>   
+          </div>
+        </div>
+      </div>
+
+      <div class="correo">
+        <div class="left">
+          <label for="correo" id="correo">Email</label>
+        </div>
+        <div class="right">
+          <input type="email" name="email" id="correo">
+        </div>
+      </div>
+
+      <div class="correo">
+        <div class="left">
+          <label for="tlf" id="telefono">Telefono</label> 
+        </div>
+        <div class="fila">
+          <div class="campo">
+            <input type="tel" name="fijo">
+            <small class="guia">Fijo</small>
+          </div>
+          <div class="campo">
+            <input type="tel" name="movil">
+            <small class="guia">Movil</small>
+          </div>
+        </div>
+      </div>
+      <div class="boton">
+        <button type="submit" value="Enviar">Registrarse</button>
+      </div>
+    </form>
   </body>
 </html>
